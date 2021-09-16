@@ -1,0 +1,14 @@
+datasource db {
+  url      = "mysql://root:Awet_003994@localhost/ridefi"
+  provider = "mysql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Users {
+  id        String   @id @default(uuid())  
+  createdAt DateTime @default(now())
+  email     String   @unique
+}

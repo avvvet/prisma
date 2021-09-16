@@ -1,5 +1,5 @@
 datasource db {
-  url      = "mysql://root:Awet_003994@localhost/ridefi"
+  url      = "mysql://[user]:[password]@localhost/ridefi"
   provider = "mysql"
 }
 
